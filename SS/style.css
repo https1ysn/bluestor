@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    background: linear-gradient(to bottom, #4FACFE, #68E0CF, #86a8e7); 
+}
+
+header {
+    background-color: #0077B6;
+    color: #0e0b0b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #CAF0F8;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #50b944;
+    background-color: #03045E;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.3s ease, transform 0.3s ease;
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 5px 15px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(19, 237, 3, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(223, 7, 7, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(122, 34, 255, 0.4);
+    }
+}
+
+.inline-image {
+    height: 37px;
+    vertical-align: -3px;
+    resize: horizontal;
+}
+
+.inline1-image {
+    height: 30px;
+    vertical-align: middle;
+    resize: horizontal;
+}
+
+.container {
+    margin: 20px 0 0 110px;
+    width: 70%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(221, 0, 255, 0.6);
+    transition: all ease-in-out 1s;
+}
+
+.container img:hover {
+    width: 25%;
+}
+
+#team-name {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: monospace;
+    padding: 10px;
+}
+
+.barcelona span:nth-child(1) {
+    color: #004D98;
+}
+
+.barcelona span:nth-child(2) {
+    color: #A50044;
+}
+
+.barcelona span:nth-child(3) {
+    color: goldenrod;
+}
+
+.barcelona span:nth-child(4) {
+    color: #A50044;
+}
+
+.madrid span:nth-child(1) {
+    color: #FEBE10;
+}
+
+.madrid span:nth-child(2) {
+    color: #FFFFFF;
+}
+
+.madrid span:nth-child(3) {
+    color: #FEBE10;
+}
+
+.manutd span:nth-child(1) {
+    color: #DA291C;
+}
+
+.manutd span:nth-child(2) {
+    color: #FBE122;
+}
+
+.Bayern span:nth-child(1) {
+    color: #d4d888;
+}
+
+.Bayern span:nth-child(2) {
+    color: #C8102E;
+}
+
+.Bayern span:nth-child(3) {
+    color: #0d3768;
+}
+.mancity span:nth-child(1) {
+    color: #0d3b85;
+}
+
+.mancity span:nth-child(2) {
+    color: rgb(255, 255, 254);
+}
+.manunited span:nth-child(1) {
+    color: #b9ef0b;
+}
+
+.manunited span:nth-child(2) {
+    color: rgb(233, 2, 2);
+}
+.OP {
+    font-weight: bolder;
+}
+.psg span:nth-child(1) {
+    color: #001392;
+}
+
+.psg span:nth-child(2) {
+    color: rgb(181, 0, 0);
+}
+
+.psg span:nth-child(3) {
+    color: #001392;
+}
+.wydad span:nth-child(1) {
+    color: #962a2a;
+}
+
+.wydad span:nth-child(2) {
+    color: rgb(255, 255, 255);
+}
+
+.wydad span:nth-child(3) {
+    color: goldenrod;
+}
+.OP {
+    font-weight: bolder;
+}
+
+.team-name {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 28px;
+    background-color: #ffffff;
+    background: linear-gradient(to bottom, #fe9e4f, #698a15); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
